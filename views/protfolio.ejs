@@ -1,0 +1,292 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="protfolio.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    
+    <div class="hero-header" id="home" action="/portfolio" method="POST">
+        <div class="wrapper">
+            <header class="sticky-header">
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Adarsh Janjirala</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#qualifications" class="nav-link">Qualifications</a></li>
+                        <li><a href="#expertise" class="nav-link">Certifications</a></li>
+                        <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                        <li><a href="#contact-section" class="nav-link">Contact Me</a></li>
+                        <!-- <button class="btn" action="/login">Logout</button> -->
+                        <a href="/login" class="logout-btn">Logout</a>
+                        <!-- <button>hiiiiiii</button> -->
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/main_photo.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Adarsh Janjirala</h1>
+                    
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1C21RWFcslTcuXqyX5chJBkO8jP47lF7P/view?usp=sharing" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100012046320601"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/adarsh-janjirala-23b55825b/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/adharsh_745/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/adarsh745"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="section">
+        <div class="about-container">
+            <div class="about-photo">
+                <img src="images/about-photo.jpg" alt="About Me Photo">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Hello! I am Adarsh, a versatile full-stack developer skilled in creating modern, responsive, and user-friendly websites and applications.</p>
+                <p>I specialize in front-end frameworks like ReactJS and have experience in AWS cloud computing.</p>
+                <p>When I'm not coding, I enjoy designing user experiences, contributing to open-source projects, and exploring the latest trends in web development.</p>
+                <p><strong>Skills:</strong> HTML, CSS, JavaScript, ReactJS, Node.js, AWS</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="section">
+        <div class="skills-container">
+            <h2>Skills</h2>
+            <div class="skill-category">
+                
+                <h3>Programming Languages</h3>
+                <div class="skill">
+                    <span>C</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;">60%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>C++</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Java</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;">50%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;">65%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Technologies</h3>
+                <div class="skill">
+                    <span>ReactJS</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>NodeJs</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 77%;">77%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>ExpressJs</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;">60%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>MongoDB</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;">50%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Qualifications Section -->
+    <div id="qualifications" class="section">
+        <h2>Qualifications</h2>
+        <div class="qualification-container">
+            <!-- Left Side: Profile Image -->
+            <div class="image-section">
+                <img src="images/qualifi.jpg" alt="Profile Image">
+            </div>
+        
+            <!-- Right Side: Education & Projects -->
+            <div class="qualification-content">
+                <h2>Education</h2>
+                <p><strong>Sreenidhi Institute Of Science and Technology, Hyderabad</strong></p>
+                <p>Degree: Bachelor of Technology (BTech) – Computer Science (IoT)</p>
+                <p>Duration: Dec 2021 – June 2025</p>
+        
+                <p><strong>Delta Junior College, Hyderabad</strong></p>
+                <p>Intermediate Education – MPC</p>
+        
+                <h2>Projects</h2>
+                <ul>
+                    <li><strong>Smart Home Security System:</strong> IoT-based security system with an automatic phone calling feature.</li>
+                    <li><strong>Newsletter App:</strong> React-based news app fetching real-time articles.</li>
+                    <li><strong>Weather Checker:</strong> Web app displaying real-time weather conditions with dynamic UI.</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Certifications Section -->
+    <div id="expertise" class="section">
+        <h2>Certifications</h2>
+    
+        <!-- First Card Section -->
+        <div class="card-container">
+            <div class="card aws-card" onclick="showImage('images/AWS_Cloud.jpg')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/AWS.jpg" alt="AWS Cloud" class="card-img">
+                    </div>
+                    <div class="card-back">
+                        <!-- <p>AWS Cloud Certification</p> -->
+                        <img src="images/AWS_Cloud.jpg" alt="Machine Learning" class="card-img">
+                    </div>
+                </div>
+            </div>
+            <div class="card ml-card" onclick="showImage('images/AIML.jpg')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/ml.jpg" alt="Machine Learning" class="card-img">
+                    </div>
+                    <div class="card-back">
+                        <img src="images/AIML.jpg" alt="Machine Learning" class="card-img">
+                    </div>
+                </div>
+            </div>
+            <div class="card course-card" onclick="showImage('images/courcevita.jpg')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/image.png" alt="Course Certification" class="card-img">
+                    </div>
+                    <div class="card-back">
+                        <!-- <p>Clik Me</p> -->
+                        <img src="images/courcevita.jpg" alt="Machine Learning" class="card-img">
+                    </div>
+                </div>
+            </div>
+            <div class="card ml-card" onclick="showImage('images/AIML.jpg')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/wb.png" alt="Machine Learning" class="card-img">
+                    </div>
+                    <div class="card-back">
+                        <img src="images/html.jpg" alt="Machine Learning" class="card-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Fullscreen Image Display -->
+        <div id="image-display" class="image-display">
+            <img id="displayed-image" src="" alt="Selected Image">
+            <span id="close-btn" onclick="closeImage()">X</span>
+        </div>
+        <script src="script.js"></script>
+    </div>
+
+    <!-- Projects Section -->
+    <div  id="portfolio" class="section">
+        <h2>Projects</h2>
+        <p>Feel free to explore my work!</p>
+        <div class="container">
+            <div class="Pcard">
+                <img class="card-img-top" src="images/weather.jpg" alt="Weather App">
+                <div class="card-body">
+                    <h5 class="card-title">Weather Checker App</h5>
+                    <a href="https://weather-checer.onrender.com/" class="btn btn-primary">Get App</a>
+                </div>
+            </div>
+
+            <div class="Pcard">
+                <img class="card-img-top" src="images/newsletter.jpg" alt="Newsletter App">
+                <div class="card-body">
+                    <h5 class="card-title">News Letter App</h5>
+                    <a href="https://github.com/adarsh745/News_letter" class="btn btn-primary">Get App</a>
+                </div>
+            </div>
+
+            <div class="Pcard">
+                <img class="card-img-top" src="images/smarthome.jpg" alt="Smart Home Security">
+                <div class="card-body">
+                    <h5 class="card-title">Smart Home Security</h5>
+                    <a href="https://github.com/adarsh745" class="btn btn-primary">Get App</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact-section" class="section-container">
+        <br>
+        <br>
+        <br>
+        <h1 style="color: aquamarine;">Contact Details</h1>
+        <br>
+        <br>
+        
+        <div class="contact-card " >
+            <img src="images/pic2.jpg" class="contact-card-img" alt="Profile Picture">
+            <ul class="contact-list">
+                <li class="contact-item">
+                    <strong>Email:</strong>
+                    <img src="images/email.png" class="contact-email-icon" alt="Email Icon">
+                    <a href="mailto:adarshjanjirala745@gmail.com">adarshjanjirala745@gmail.com</a>
+                </li>
+                <li class="contact-item">
+                    <strong>Phone:</strong> +91 7671812449
+                </li>
+                <li class="contact-item">
+                    <strong>Location:</strong> Hyderabad, Telangana, India
+                </li>
+                <p style="color:black;">Feel free to reach out to me via email...</p>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JS file -->
+</body>
+</html>
